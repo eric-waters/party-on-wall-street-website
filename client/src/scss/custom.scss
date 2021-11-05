@@ -1,0 +1,16 @@
+// $theme-colors: (
+//     "primary": #8C1D40,
+//     "secondary": #FFC627
+// );
+
+$primary: #8C1D40;
+$secondary: #FFC627;
+
+// Option A: Include all of Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+//sass client/src/scss/custom.scss client/src/css/custom.css
