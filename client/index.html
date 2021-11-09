@@ -5,17 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party on Wallstreet</title>
-    <!-- <link rel="stylesheet" href="./src/css/test.css"> -->
     <link rel="stylesheet" href="./src/css/custom.css">
     <link rel="icon" href="images/Founders_Lab.png">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="container-fluid bg-dark min-vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-dark">
+    <header class="container-fluid bg-dark">
+        <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand text-secondary">
                 <img src="images/Founders_Lab.png" alt="" width="40" height="50" class="d-inline-block align-text-top">
                 Party on Wallstreet
             </a>
@@ -42,84 +42,123 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#strategy">Business Strategy</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
                 </ul>
             </div>
-            </div>
         </nav>
-        <div class="container bg-dark">
-            <!--Intro-->
+        <div class="container text-center mt-5 pt-3" style="margin-top: 10em;">
+            <h1 class="text-light display-4 heading typewriter" style="font-size: 400%;">
+                <span class="typewrite text-light" data-period="2000" data-type='[ "Party on Wallstreet" ]'>
+                  <span class="wrap"></span>
+                </span>
+            </h1>
             <div id="intro" class="text-light text-center">
-                <h1>Founder's Lab Honors Thesis: Party on Wallstreet</h1>
+                <!-- <h1>Founder's Lab Honors Thesis: Party on Wallstreet</h1> -->
                 <h5>Created by Eric Waters, Collin Wood, and Shaheer Khan</h5>
+                <div class="container text-center" style="font-size: 2.5rem">
+                    <a href="mailto:partyonwallstreetgame@gmail.com" class="fa fa-envelope mx-2"></a>
+                    <a href="https://www.facebook.com/Party-On-Wallstreet-106152761881876" class="fa fa-facebook mx-2" target="_blank"></a>
+                    <a href="https://www.instagram.com/partyonwallstreetgame/" class="fa fa-instagram mx-2" target="_blank"></a>
+                </div>
                 <button type="button" class="btn btn-primary my-2" onclick="alert('The game is not ready for download yet. Come back later!')">Download (Windows 64-bit)</button>
             </div>
-
-            <!--Our Mission-->
-            <div id="mission" class="text-light">
-                <h2><strong>Our Mission</strong></h2>
-                <p>
-                    To provide a refreshing and exciting new experience for the tycoons 
-                    in society who want a little more of that entrepreneurial lifestyle.
+        </div>
+    </header>
+    <main class="container bg-dark">
+        <!--Our Mission-->
+        <div id="mission">
+            <h2 class="text-secondary"><strong>Our Mission</strong></h2>
+            <p class="text-light">
+                To provide a refreshing and exciting new experience for the tycoons 
+                in society who want a little more of that entrepreneurial lifestyle.
+            </p>
+        </div>
+        <!--Who are we?-->
+        <div id="whoarewe">
+            <h2 class="text-secondary"><strong>Who are we?</strong></h2>
+            <p class="text-light">
+                We are a team of technically gifted ASU students living an entrepreneurial lifestyle 
+                and searching for a way to share that with other students like ourselves. We are avid 
+                supporters of personally directed business ventures and self-led projects, and as creators 
+                of our own destinies, we wanted to share that experience with others who have a passion for 
+                the self-made mindset. Our brand’s goal is to provide a fun and relaxing experience that brings 
+                together individuals who share that drive, and to challenge each one of them and their ability to 
+                come up with unique and creative solutions on the fly. Our team is focused on providing an experience 
+                that resembles the entrepreneurial process while also participating in that same very process: a game 
+                for the players, made by the players.
+            </p>
+        </div>
+        <!--The Idea-->
+        <div id="idea" class="text-light">
+            <h2 class="text-secondary"><strong>The Idea</strong></h2>
+            <p class="text-light">
+                Party on Wallstreet is a couch-party style game where a single host who owns the game can display it on a larger screen 
+                for other players to view. These other players can then connecting using their own computer or mobile device in order 
+                to interact with the game. During the game, the players will:
+                <ol>
+                    <li>Invent solutions to randomly-generated problems</li>
+                    <li>Choose an invention created by another player</li>
+                    <li>Craft an enticing and persuasive pitch for their selected product</li>
+                    <li>See their product pitches face-off against other players and vote on their favorite</li>
+                    <li>Invest in products that have the most potential</li>
+                    <li>Reap rewards in ROI from smart investments</li>
+                </ol>    
+            </p>
+        </div>
+        <!--Implementation-->
+        <div id="implementation" class="text-light">
+            <h2 class="text-secondary"><strong>Implementation</strong></h2>
+            <p class="text-light">
+                The current plan for the implementation of the game is to use WebSockets in order to implement the separate game instances so 
+                that multiple games can be played simultaneously. We intend to use Unity to create the game application itself, which will be run 
+                by the host of the game. We also intend to utilize our Barrett funding to outsource talent for the graphical design of the game. 
+                The majority of the game development will occur beginning in the Spring 2022 semester.
+            </p>
+        </div>
+        <!--Business Strategy-->
+        <div id="strategy" class="text-light">
+            <h2 class="text-secondary"><strong>Business Strategy</strong></h2>
+            <p class="text-light">
+                We will likely not settle on a concrete business strategy until a prototype of the game exists. However, our prior 
+                surveying and research indicates that a game like this will sell best if priced at around $10-$20. We are also considering 
+                a free-trial program in order to help the game build velocity. 
+                As a brand new game studio, effective advertising will be essential to bringing this game to life. Our marketing strategy is still 
+                to be determined, but we anticipate that digital marketing, especially social media marketing, will be the most cost-effective way to 
+                reach our target market.
+            </p>
+        </div>
+        <div id="contact" class="text-light">
+            <h2 class="text-secondary"><strong>Contact Us</strong></h2>
+            <div class="">
+                <p class="text-light">Whether you have a question or want to leave feedback on the game, we would love to hear it and 
+                    will get back to you as soon as possible.
                 </p>
-            </div>
-            <!--Who are we?-->
-            <div id="whoarewe" class="text-light">
-                <h2><strong>Who are we?</strong></h2>
-                <p>
-                    We are a team of technically gifted ASU students living an entrepreneurial lifestyle 
-                    and searching for a way to share that with other students like ourselves. We are avid 
-                    supporters of personally directed business ventures and self-led projects, and as creators 
-                    of our own destinies, we wanted to share that experience with others who have a passion for 
-                    the self-made mindset. Our brand’s goal is to provide a fun and relaxing experience that brings 
-                    together individuals who share that drive, and to challenge each one of them and their ability to 
-                    come up with unique and creative solutions on the fly. Our team is focused on providing an experience 
-                    that resembles the entrepreneurial process while also participating in that same very process: a game 
-                    for the players, made by the players.
-                </p>
-            </div>
-            <!--The Idea-->
-            <div id="idea" class="text-light">
-                <h2><strong>The Idea</strong></h2>
-                <p>
-                    Party on Wallstreet is a couch-party style game where a single host who owns the game can display it on a larger screen 
-                    for other players to view. These other players can then connecting using their own computer or mobile device in order 
-                    to interact with the game. During the game, the players will:
-                    <ol>
-                        <li>Invent solutions to randomly-generated problems</li>
-                        <li>Choose an invention created by another player</li>
-                        <li>Craft an enticing and persuasive pitch for their selected product</li>
-                        <li>See their product pitches face-off against other players and vote on their favorite</li>
-                        <li>Invest in products that have the most potential</li>
-                        <li>Reap rewards in ROI from smart investments</li>
-                    </ol>    
-                </p>
-            </div>
-            <!--Implementation-->
-            <div id="implementation" class="text-light">
-                <h2><strong>Implementation</strong></h2>
-                <p>
-                    The current plan for the implementation of the game is to use WebSockets in order to implement the separate game instances so 
-                    that multiple games can be played simultaneously. We intend to use Unity to create the game application itself, which will be run 
-                    by the host of the game. We also intend to utilize our Barrett funding to outsource talent for the graphical design of the game. 
-                    The majority of the game development will occur beginning in the Spring 2022 semester.
-                </p>
-            </div>
-            <!--Business Strategy-->
-            <div id="strategy" class="text-light">
-                <h2><strong>Business Strategy</strong></h2>
-                <p>
-                    We will likely not settle on a concrete business strategy until a prototype of the game exists. However, our prior 
-                    surveying and research indicates that a game like this will sell best if priced at around $10-$20. We are also considering 
-                    a free-trial program in order to help the game build velocity. 
-                    As a brand new game studio, effective advertising will be essential to bringing this game to life. Our marketing strategy is still 
-                    to be determined, but we anticipate that digital marketing, especially social media marketing, will be the most cost-effective way to 
-                    reach our target market.
-                </p>
+                <form>
+                    <div class="form-group">
+                        <label class="text-muted" style="display: block;" for="nameInput">Your name</label>
+                        <input type="text" class="form-control my-2" id="nameInput" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="text-muted" style="display: block;" for="emailInput">Your email address</label>
+                        <input type="email" class="form-control my-2" id="emailInput" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label class="text-muted" style="display: block;" for="messageInput">Write your message here</label>
+                        <textarea class="form-control my-2" id="messageInput" rows="3" placeholder="Message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
+                    </div>
+                    </form>
             </div>
         </div>
-        <footer class="text-primary text-center mt-1">
-            &copy; MAROON AND GOLD GAME STUDIOS
-        </footer>
-    </div>
+    </main>
+    <footer class="text-secondary text-center bg-dark mt-5">
+        &copy; MAROON AND GOLD GAME STUDIOS
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

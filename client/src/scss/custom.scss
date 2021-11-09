@@ -13,4 +13,11 @@ $secondary: #FFC627;
     min-height: 100vh;
 }
 
+#myNavbar {
+    top: -0%;
+    transition: top 300ms ease; }
+  
+#myNavbar:-webkit-scrollbar {
+    top: -6%; }
+
 //sass client/src/scss/custom.scss client/src/css/custom.css
