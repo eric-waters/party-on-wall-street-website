@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party on Wallstreet</title>
     <link rel="stylesheet" href="./src/css/custom.css">
-    <link rel="icon" href="images/Founders_Lab.png">
+    <link rel="icon" href="images/POWS-logo.png">
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
@@ -15,8 +15,8 @@
     <header class="container-fluid bg-dark">
         <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-            <a class="navbar-brand text-secondary">
-                <img src="images/Founders_Lab.png" alt="" width="40" height="50" class="d-inline-block align-text-top">
+            <a class="navbar-brand text-primary">
+                <!-- <img src="images/party-on-wallstreet-logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top"> -->
                 Party on Wallstreet
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,7 @@
                 </span>
             </h1>
             <div id="intro" class="text-light text-center">
+                <img src="images/POWS-logo.png" class="img-fluid h-25 w-25 my-2" alt="Party on Wallstreet Logo">
                 <!-- <h1>Founder's Lab Honors Thesis: Party on Wallstreet</h1> -->
                 <h5>Created by Eric Waters, Collin Wood, and Shaheer Khan</h5>
                 <div class="container text-center" style="font-size: 2.5rem">
@@ -69,7 +70,7 @@
     <main class="container bg-dark">
         <!--Our Mission-->
         <div id="mission">
-            <h2 class="text-secondary"><strong>Our Mission</strong></h2>
+            <h2 class="text-primary"><strong>Our Mission</strong></h2>
             <p class="text-light">
                 To provide a refreshing and exciting new experience for the tycoons 
                 in society who want a little more of that entrepreneurial lifestyle.
@@ -77,7 +78,7 @@
         </div>
         <!--Who are we?-->
         <div id="whoarewe">
-            <h2 class="text-secondary"><strong>Who are we?</strong></h2>
+            <h2 class="text-primary"><strong>Who are we?</strong></h2>
             <p class="text-light">
                 We are a team of technically gifted ASU students living an entrepreneurial lifestyle 
                 and searching for a way to share that with other students like ourselves. We are avid 
@@ -92,7 +93,7 @@
         </div>
         <!--The Idea-->
         <div id="idea" class="text-light">
-            <h2 class="text-secondary"><strong>The Idea</strong></h2>
+            <h2 class="text-primary"><strong>The Idea</strong></h2>
             <p class="text-light">
                 Party on Wallstreet is a couch-party style game where a single host who owns the game can display it on a larger screen 
                 for other players to view. These other players can then connecting using their own computer or mobile device in order 
@@ -109,7 +110,7 @@
         </div>
         <!--Implementation-->
         <div id="implementation" class="text-light">
-            <h2 class="text-secondary"><strong>Implementation</strong></h2>
+            <h2 class="text-primary"><strong>Implementation</strong></h2>
             <p class="text-light">
                 The current plan for the implementation of the game is to use WebSockets in order to implement the separate game instances so 
                 that multiple games can be played simultaneously. We intend to use Unity to create the game application itself, which will be run 
@@ -119,7 +120,7 @@
         </div>
         <!--Business Strategy-->
         <div id="strategy" class="text-light">
-            <h2 class="text-secondary"><strong>Business Strategy</strong></h2>
+            <h2 class="text-primary"><strong>Business Strategy</strong></h2>
             <p class="text-light">
                 We will likely not settle on a concrete business strategy until a prototype of the game exists. However, our prior 
                 surveying and research indicates that a game like this will sell best if priced at around $10-$20. We are also considering 
@@ -130,7 +131,7 @@
             </p>
         </div>
         <div id="contact" class="text-light">
-            <h2 class="text-secondary"><strong>Contact Us</strong></h2>
+            <h2 class="text-primary"><strong>Contact Us</strong></h2>
             <div class="">
                 <p class="text-light">Whether you have a question or want to leave feedback on the game, we would love to hear it and 
                     will get back to you as soon as possible.
@@ -149,13 +150,13 @@
                         <textarea class="form-control my-2" id="messageInput" rows="3" placeholder="Message..." required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="button" class="btn btn-primary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
+                        <button type="button" class="btn btn-secondary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
                     </div>
                     </form>
             </div>
         </div>
     </main>
-    <footer class="text-secondary text-center bg-dark mt-5">
+    <footer class="text-primary text-center bg-dark mt-5">
         &copy; MAROON AND GOLD GAME STUDIOS
     </footer>
     <script src="https://smtpjs.com/v3/smtp.js"></script>

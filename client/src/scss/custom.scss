@@ -1,10 +1,10 @@
-// $theme-colors: (
-//     "primary": #8C1D40,
-//     "secondary": #FFC627
-// );
 
-$primary: #8C1D40;
-$secondary: #FFC627;
+//$primary: #8C1D40; //asu maroon
+$primary: #118C4F; //money green
+
+// $secondary: #FFC627; //asu gold
+$secondary: #ffcf40; //money gold
+
 
 // Option A: Include all of Bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap";
@@ -19,5 +19,9 @@ $secondary: #FFC627;
   
 #myNavbar:-webkit-scrollbar {
     top: -6%; }
+
+.fa {
+    color: $secondary;
+}
 
 //sass client/src/scss/custom.scss client/src/css/custom.css
