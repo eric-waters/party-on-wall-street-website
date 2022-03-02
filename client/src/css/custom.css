@@ -8691,4 +8691,7 @@ textarea.form-control-lg {
 .fa {
   color: #ffcf40; }
 
+.no-wrap {
+  white-space: nowrap; }
+
 /*# sourceMappingURL=custom.css.map */
