@@ -15,8 +15,8 @@
     <header class="container-fluid bg-dark">
         <nav id="myNavbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-primary">
-                    <!-- <img src="images/party-on-wallstreet-logo.png" alt="" width="50" height="50" class="d-inline-block align-text-top"> -->
+                <a class="navbar-brand text-success">
+                    <img src="images/POWS_Icon.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
                     Party on Wall Street
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,63 +24,79 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav navbar-dark ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#">Home</a>
+                        <a class="nav-link no-wrap text-success" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#mission">Our Mission</a>
+                        <a class="nav-link no-wrap text-success" href="#mission">Our Mission</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#whoarewe">Who are we?</a>
+                        <a class="nav-link no-wrap text-success" href="#whoarewe">Who are we?</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#idea">The Idea</a>
+                        <a class="nav-link no-wrap text-success" href="#idea">The Idea</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#implementation">Implementation</a>
+                        <a class="nav-link no-wrap text-success" href="#implementation">Implementation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#strategy">Business Strategy</a>
+                        <a class="nav-link no-wrap text-success" href="#strategy">Business Strategy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link no-wrap" href="#contact">Contact Us</a>
+                        <a class="nav-link no-wrap text-success" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="container text-center mt-5 pt-3" style="margin-top: 10em;">
             <h1 class="text-light display-4 heading typewriter" style="font-size: 400%;">
-                <span class="typewrite text-light" data-period="2000" data-type='[ "Party on Wall Street" ]'>
+                <span class="typewrite text-primary" data-period="2000" data-type='[ "Party on Wall Street" ]'>
                   <span class="wrap"></span>
                 </span>
             </h1>
             <div id="intro" class="text-light text-center">
-                <img src="images/POWS_Icon.png" class="img-fluid h-25 w-25 my-2" alt="Party on Wall Street Logo">
+                <img src="images/POWS_Icon.png" class="img-fluid my-2" alt="Party on Wall Street Logo" style="width: 10%;">
                 <!-- <h1>Founder's Lab Honors Thesis: Party on Wallstreet</h1> -->
-                <h5>Created by Eric Waters, Collin Wood, and Shaheer Khan</h5>
+                <h5 class="text-primary">Created by Eric Waters, Collin Wood, and Shaheer Khan</h5>
                 <div class="container text-center" style="font-size: 2.5rem">
                     <a href="mailto:partyonwallstreetgame@gmail.com" class="fa fa-envelope mx-2 text-decoration-none"></a>
                     <a href="https://www.facebook.com/Party-On-Wallstreet-106152761881876" class="fa fa-facebook mx-2 text-decoration-none" target="_blank"></a>
                     <a href="https://www.instagram.com/partyonwallstreetgame/" class="fa fa-instagram mx-2 text-decoration-none" target="_blank"></a>
                 </div>
+                <br>
+                <br>
+                <p class="text-info mb-0">You can start playing our game right here!</p>
+                <div class="text-info">
+                    <span>1. Take out a mobile device<br></span>
+                    <span>2. Go to airconsole.com or download the AirConsole app in your mobile app store<br></span>
+                    <span>3. Enter the connect code and the game will automatically start!<br></span>
+                    <span>4. Click the Fullscreen button in the top right corner of the game to maximize the view<br></span>
+                </div>
+                <ul class="text-info">
+
+                </ul>
                 <iframe
+                    id="iframe"
                     class="my-3"
                     allowfullscreen="true"
                     allow="autoplay; microphone; camera"
                     src="https://www.airconsole.com/?preview_token=9771c8822dfc8722a9d14b988a070393&preview=https://game.airconsole.com/maroonandgoldgamestudios.partyonwallstreet.cdn.airconsole.com/2022-04-08-02-42-48/"
                     scrolling="no"
                     frameborder="0"
-                    width="1366"
-                    height="786">
+                    width="100%"
+                    >
                 </iframe>
+                <video width="100%" controls poster="images/pows-screenshot.png">
+                    <source src="images/Party on Wall Street.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </header>
     <main class="container bg-dark">
         <!--Our Mission-->
         <div id="mission">
-            <h2 class="text-primary"><strong>Our Mission</strong></h2>
+            <h2 class="text-success"><strong>Our Mission</strong></h2>
             <p class="text-light">
                 To provide a refreshing and exciting new experience for the tycoons 
                 in society who want a little more of that entrepreneurial lifestyle.
@@ -88,7 +104,7 @@
         </div>
         <!--Who are we?-->
         <div id="whoarewe">
-            <h2 class="text-primary"><strong>Who are we?</strong></h2>
+            <h2 class="text-success"><strong>Who are we?</strong></h2>
             <p class="text-light">
                 We are a team of technically gifted ASU students living an entrepreneurial lifestyle 
                 and searching for a way to share that with other students like ourselves. We are avid 
@@ -103,7 +119,7 @@
         </div>
         <!--The Idea-->
         <div id="idea" class="text-light">
-            <h2 class="text-primary"><strong>The Idea</strong></h2>
+            <h2 class="text-success"><strong>The Idea</strong></h2>
             <p class="text-light">
                 Party on Wall Street is a couch-party style game where a single host who owns the game can display it on a larger screen 
                 for other players to view. These other players can then connect using their own computer or mobile device in order 
@@ -120,27 +136,26 @@
         </div>
         <!--Implementation-->
         <div id="implementation" class="text-light">
-            <h2 class="text-primary"><strong>Implementation</strong></h2>
+            <h2 class="text-success"><strong>Implementation</strong></h2>
             <p class="text-light">
-                Development is underway! The game is being created using the Unity game engine. We are also utilizing AirConsole in order to use phones as controllers. 
-                We have also hired a graphic designer to add art and characters to the game's interface. The implementation is indeed challenging and time consuming, but 
-                the game will be complete by April 15, 2022.
+                We created this game using a combination of the Unity game engine and the AirConsole back-end framework to communicate between phones and the screen.
+                The controller interface was created using Bootstrap 5. The artwork for the game was done by Amanda Federico and our music was created by Jakob Hasan.
+                The game is submitted and under review by the AirConsole team!
             </p>
         </div>
         <!--Business Strategy-->
         <div id="strategy" class="text-light">
-            <h2 class="text-primary"><strong>Business Strategy</strong></h2>
+            <h2 class="text-success"><strong>Business Strategy</strong></h2>
             <p class="text-light">
-                Using AirConsole technologies to build this game means that we are required to post our game on AirConsole's game store. Although this is not ideal for our own profit, 
-                it is the only way the game will be completed in time. After April 15, we intend to remove the AirConsole technology in order to sell the game on its own in popular 
-                game stores like Playstation, Xbox, Steam, and more.
+                Since we used AirConsole technology to create the game, we have to put it onto their game store. AirConsole shares a portion of the profits they make 
+                with their developers. Therefore, we still must advertise the game ourselves to bring players in.
                 As a brand new game studio, effective advertising will be essential to bringing this game to life. Our marketing strategy is still 
                 to be determined, but we anticipate that digital marketing, especially social media marketing, will be the most cost-effective way to 
                 reach our target market.
             </p>
         </div>
         <div id="contact" class="text-light">
-            <h2 class="text-primary"><strong>Contact Us</strong></h2>
+            <h2 class="text-success"><strong>Contact Us</strong></h2>
             <div class="">
                 <p class="text-light">Whether you have a question or want to leave feedback on the game, we would love to hear it and 
                     will get back to you as soon as possible.
@@ -159,15 +174,26 @@
                         <textarea class="form-control my-2" id="messageInput" rows="3" placeholder="Message..." required></textarea>
                     </div>
                     <div class="text-center">
-                        <button type="button" class="btn btn-secondary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
+                        <button type="button" class="btn btn-primary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
                     </div>
                     </form>
             </div>
         </div>
+        
     </main>
-    <footer class="text-primary text-center bg-dark mt-5">
+    <footer class="text-success text-center bg-dark mt-5">
         &copy; MAROON AND GOLD GAME STUDIOS
     </footer>
+    <script>
+        window.addEventListener('resize', function() {
+            var iframe = document.getElementById('iframe');
+            var frame_width = iframe.clientWidth;
+            iframe.setAttribute('height', (frame_width / 1.5));
+        });
+        var iframe = document.getElementById('iframe');
+        var frame_width = iframe.clientWidth;
+        iframe.setAttribute('height', (frame_width / 1.5));
+    </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./app.js"></script>
 </body>

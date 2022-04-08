@@ -1,17 +1,19 @@
+$primary: #FFE362;
+$secondary: #4f5153;
+$success: #118C4F;
+$info: #8C97D8;
+$warning: #fdff8a;
+$danger: #cc3e51;
+$light: #F8F9FA;
+$dark: #252525;
+$teal: #46c59f;
+$orange: #d68a4b;
+$brown: #b1885d;
 
-//$primary: #8C1D40; //asu maroon
-$primary: #118C4F; //money green
-
-// $secondary: #FFC627; //asu gold
-$secondary: #ffcf40; //money gold
-
+$theme-colors: ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark, "teal": $teal, "orange": $orange, "brown": $brown );
 
 // Option A: Include all of Bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap";
-
-.min-vh-100 {
-    min-height: 100vh;
-}
 
 #myNavbar {
     top: -0%;
@@ -21,7 +23,7 @@ $secondary: #ffcf40; //money gold
     top: -6%; }
 
 .fa {
-    color: $secondary;
+    color: $success;
 }
 
 .no-wrap {
