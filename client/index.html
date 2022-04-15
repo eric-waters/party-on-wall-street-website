@@ -164,15 +164,15 @@
                 <form>
                     <div class="form-group">
                         <label class="text-muted" style="display: block;" for="nameInput">Your name</label>
-                        <input type="text" class="form-control my-2" id="nameInput" placeholder="John Doe" required>
+                        <input type="text" class="form-control my-2" id="nameInput" placeholder="John Doe" required autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label class="text-muted" style="display: block;" for="emailInput">Your email address</label>
-                        <input type="email" class="form-control my-2" id="emailInput" placeholder="name@example.com">
+                        <input type="email" class="form-control my-2" id="emailInput" placeholder="name@example.com" autocomplete="off">
                     </div>
                     <div class="form-group">
                         <label class="text-muted" style="display: block;" for="messageInput">Write your message here</label>
-                        <textarea class="form-control my-2" id="messageInput" rows="3" placeholder="Message..." required></textarea>
+                        <textarea class="form-control my-2" id="messageInput" rows="3" placeholder="Message..." required autocomplete="off"></textarea>
                     </div>
                     <div class="text-center">
                         <button type="button" class="btn btn-primary mt-2" onclick="sendEmail(nameInput.value, emailInput.value, messageInput.value)">Submit</button>
